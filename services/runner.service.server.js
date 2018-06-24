@@ -6,8 +6,10 @@ module.exports = function (app) {
     app.get('/api/logout', logout);
     app.post('/api/login', login);
     app.put('/api/runner', updateRunner);
+    app.get('/api/runner/:runnerId/runs', findAllRunsForRunner);
 
     var runnerModel = require('../models/runner/runner.model.server');
+    var runModel = require('../models/run/run.model.server');
 
     function findUserById(req, res) {
         var id = req.params['runnerId'];
@@ -22,6 +24,7 @@ module.exports = function (app) {
         runnerModel
             .findRunnerByCredentials(credentials)
             .then(function(user) {
+                console.log(user);
                 req.session['currentUser'] = user;
                 res.json(user);
             })
@@ -36,14 +39,14 @@ module.exports = function (app) {
         runnerModel.createRunner(user)
             .then(function (user) {
                 req.session['currentUser'] = user;
-                res.send(user);
+                res.json(user);
             })
     }
 
     function findAllRunners(req, res) {
         runnerModel.findAllRunners()
             .then(function (users) {
-                res.send(users);
+                res.json(users);
             })
     }
 
@@ -56,6 +59,15 @@ module.exports = function (app) {
         var runner = req.body;
         console.log(runner);
         runnerModel.updateRunner(runner)
-            .then((runner) => res.send(runner));
+            .then((runner) => res.json(runner));
     }
+
+    function findAllRunsForRunner(req, res) {
+        console.log("Finding runs for runner.");
+        var id = req.params.runnerId;
+        console.log(id);
+        runModel.findRunsForRunner(id)
+            .then((runs) => res.json(runs))
+    }
+
 }

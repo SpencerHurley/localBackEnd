@@ -6,7 +6,8 @@ function findRunById(id) {
     return runModel.findOne({_id : id});
 }
 
-function createRun(run) {
+function createRun(run, id) {
+    run.owner = id;
     return runModel.create(run);
 }
 
@@ -23,12 +24,19 @@ function deleteRunById(id) {
     return runModel.deleteOne({_id: id});
 }
 
+function findRunsForRunner(id) {
+    console.log(id);
+    console.log("Here");
+    return runModel.find({owner : id});
+}
+
 var api = {
     findRunById : findRunById,
     createRun : createRun,
     findAllRuns : findAllRuns,
     updateRun : updateRun,
-    deleteRunById : deleteRunById
+    deleteRunById : deleteRunById,
+    findRunsForRunner : findRunsForRunner
 };
 
 module.exports = api;

@@ -6,5 +6,5 @@ var runnerSchema = mongoose.Schema({
     lastName: String,
     weeklyGoal: Number,
     teams: [String]
-}, {collection: 'runners'});
+}, {collection: 'runner'});
 module.exports = runnerSchema;

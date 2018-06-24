@@ -5,7 +5,6 @@ module.exports = function (app) {
     app.post('/api/run', createRun);
     app.put('/api/run/:runId', updateRun);
 
-
     var runModel = require('../models/run/run.model.server');
 
     function findAllRuns(req, res) {
@@ -15,10 +14,15 @@ module.exports = function (app) {
 
     function createRun(req, res) {
         var run = req.body;
-        runModel.createRun(run)
-            .then(function (run) {
-                res.send(run);
-            })
+        var curUser = req.session.currentUser;
+        if (curUser == null) {
+            res.json("Login");
+        } else {
+            runModel.createRun(run, curUser._id)
+                .then(function (run) {
+                    res.json(run);
+                })
+        }
     }
 
     function deleteRun(req, res) {
@@ -38,4 +42,5 @@ module.exports = function (app) {
         runModel.updateRun(run)
             .then((run) => res.json(run));
     }
+
 }

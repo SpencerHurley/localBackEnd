@@ -5,9 +5,6 @@ var runSchema = mongoose.Schema({
     distance: Number,
     date : Date,
     description: String,
-    owner: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'runnerModel'
-    }
+    owner: String
 }, {collection: 'runs'});
 module.exports = runSchema;

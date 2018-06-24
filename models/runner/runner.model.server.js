@@ -15,7 +15,8 @@ function findAllRunners() {
 }
 
 function findRunnerByCredentials(credentials) {
-    return runnerModel.findOne(credentials);
+    console.log(credentials);
+    return runnerModel.findOne({username: credentials.username, password: credentials.password});
 }
 
 function updateRunner(runner) {
