@@ -4,6 +4,7 @@ module.exports = function (app) {
     app.get('/api/run/:runId', findRunById);
     app.post('/api/run', createRun);
     app.put('/api/run/:runId', updateRun);
+    app.post('/api/run/:runId/star', starRun);
 
     var runModel = require('../models/run/run.model.server');
 
@@ -40,6 +41,12 @@ module.exports = function (app) {
     function updateRun(req, res) {
         var run = req.body;
         runModel.updateRun(run)
+            .then((run) => res.json(run));
+    }
+
+    function starRun(req, res) {
+        var id = req.params.runId;
+        runModel.starRun(id)
             .then((run) => res.json(run));
     }
 

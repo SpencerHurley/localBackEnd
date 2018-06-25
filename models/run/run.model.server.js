@@ -29,13 +29,18 @@ function findRunsForRunner(id) {
     return runModel.find({owner : id});
 }
 
+function starRun(id) {
+    return runModel.update({_id: id}, {$inc : {'stars' : 1}});
+}
+
 var api = {
     findRunById : findRunById,
     createRun : createRun,
     findAllRuns : findAllRuns,
     updateRun : updateRun,
     deleteRunById : deleteRunById,
-    findRunsForRunner : findRunsForRunner
+    findRunsForRunner : findRunsForRunner,
+    starRun : starRun
 };
 
 module.exports = api;
