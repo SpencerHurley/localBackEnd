@@ -3,7 +3,7 @@ var app = express();
 var session = require('express-session');
 var bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/nodeserver');
+mongoose.connect('mongodb://webdev2018:testtest3@ds117691.mlab.com:17691/heroku_wq6rt60n');
 
 app.use(session({
     resave: false, saveUninitialized: true,
