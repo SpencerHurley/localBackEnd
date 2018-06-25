@@ -7,9 +7,12 @@ module.exports = function (app) {
     app.post('/api/login', login);
     app.put('/api/runner', updateRunner);
     app.get('/api/runner/:runnerId/runs', findAllRunsForRunner);
+    app.get('/api/runner/:runnerId/segments', findSegmentsForRunner);
+    app.delete('/api/runner/:runnerId', deleteRunner);
 
     var runnerModel = require('../models/runner/runner.model.server');
     var runModel = require('../models/run/run.model.server');
+    var segmentModel = require('../models/segment/segment.model.server');
 
     function findUserById(req, res) {
         var id = req.params['runnerId'];
@@ -57,17 +60,34 @@ module.exports = function (app) {
 
     function updateRunner(req, res) {
         var runner = req.body;
-        console.log(runner);
         runnerModel.updateRunner(runner)
-            .then((runner) => res.json(runner));
+            .then((runner) => {
+                req.session['currentUser'] = runner;
+                res.json(runner)
+            });
     }
 
     function findAllRunsForRunner(req, res) {
-        console.log("Finding runs for runner.");
         var id = req.params.runnerId;
-        console.log(id);
         runModel.findRunsForRunner(id)
             .then((runs) => res.json(runs))
     }
 
+    function findTeamsForRunner(req, res) {
+        var runnerId = req.params.runnerId;
+        runnerModel.findTeamsForRunner(runnerId)
+            .then((teams) => res.json(teams));
+    }
+
+    function findSegmentsForRunner(req, res) {
+        var runnerId = req.params.runnerId;
+        segmentModel.findSegmentsForRunner(runnerId)
+            .then((segments) => res.json(segments));
+    }
+
+    function deleteRunner(req, res) {
+        var runnerId = req.params.runnerId;
+        runnerModel.deleteRunner(runnerId)
+            .then(() => res.json(200));
+    }
 }

@@ -26,5 +26,7 @@ app.use(function(req, res, next) {
 
 require('./services/runner.service.server')(app);
 require('./services/run.service.server')(app);
+require('./services/team.service.server')(app);
+require('./services/segment.service.server')(app);
 
 app.listen(4000);

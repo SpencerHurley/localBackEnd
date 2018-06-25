@@ -15,7 +15,6 @@ function findAllRunners() {
 }
 
 function findRunnerByCredentials(credentials) {
-    console.log(credentials);
     return runnerModel.findOne({username: credentials.username, password: credentials.password});
 }
 
@@ -23,12 +22,17 @@ function updateRunner(runner) {
     return runnerModel.update({_id: runner._id}, {$set: runner});
 }
 
+function deleteRunner(id) {
+    return runnerModel.deleteOne({_id: id});
+}
+
 var api = {
     createRunner: createRunner,
     findAllRunners: findAllRunners,
     findRunnerById: findRunnerById,
     findRunnerByCredentials : findRunnerByCredentials,
-    updateRunner : updateRunner
+    updateRunner : updateRunner,
+    deleteRunner : deleteRunner
 };
 
 module.exports = api;

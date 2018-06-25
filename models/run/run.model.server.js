@@ -15,7 +15,6 @@ function findAllRuns() {
     return runModel.find();
 }
 
-
 function updateRun(run) {
     return runModel.update({_id: run._id}, {$set: run});
 }

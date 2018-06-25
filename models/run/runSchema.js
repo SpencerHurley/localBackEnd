@@ -4,7 +4,9 @@ var runSchema = mongoose.Schema({
     duration: Number,
     distance: Number,
     date : Date,
+    stars: Number,
     description: String,
-    owner: String
+    owner: String,
+    route: String
 }, {collection: 'runs'});
 module.exports = runSchema;
