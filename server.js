@@ -29,4 +29,4 @@ require('./services/run.service.server')(app);
 require('./services/team.service.server')(app);
 require('./services/segment.service.server')(app);
 
-app.listen(4000);
+app.listen(process.env.PORT || 4000);
