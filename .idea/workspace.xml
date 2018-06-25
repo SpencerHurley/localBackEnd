@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="20ca1251-fecd-4f8f-9f9e-ef49c5c0d5cf" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/runner.service.server.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/runner.service.server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+            <state relative-caret-position="439">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -88,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="runner.service.server.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="runner.service.server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/services/runner.service.server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="65" column="32" lean-forward="true" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+            <state relative-caret-position="331">
+              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -132,10 +133,10 @@
         <option value="$PROJECT_DIR$/services/segment.service.server.js" />
         <option value="$PROJECT_DIR$/models/segment/segment.model.server.js" />
         <option value="$PROJECT_DIR$/models/runner/runner.model.server.js" />
-        <option value="$PROJECT_DIR$/services/runner.service.server.js" />
         <option value="$PROJECT_DIR$/models/runner/runnerSchema.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/services/runner.service.server.js" />
       </list>
     </option>
   </component>
@@ -234,12 +235,12 @@
       <updated>1529108252135</updated>
       <workItem from="1529108253294" duration="1454000" />
       <workItem from="1529701009140" duration="5395000" />
-      <workItem from="1529728301362" duration="36903000" />
+      <workItem from="1529728301362" duration="39046000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43752000" />
+    <option name="totallyTimeSpent" value="45895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -458,13 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/runner.service.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="65" column="32" lean-forward="true" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/runner/runnerSchema.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -481,8 +475,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+        <state relative-caret-position="439">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/runner.service.server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
         </state>
       </provider>
     </entry>

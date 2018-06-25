@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin",
-        "https://runningappwebdev2018.herokuapp.com");
+        "http://localhost:4200");
     res.header("Access-Control-Allow-Headers",
         "Origin, X-Requested-With, Content-Type, Accept");
     res.header("Access-Control-Allow-Methods",
@@ -30,4 +30,4 @@ require('./services/run.service.server')(app);
 require('./services/team.service.server')(app);
 require('./services/segment.service.server')(app);
 
-app.listen(process.env.PORT || 4000);
+app.listen(4000);

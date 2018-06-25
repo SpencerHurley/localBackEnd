@@ -34,7 +34,12 @@ module.exports = function (app) {
     }
 
     function profile(req, res) {
-        res.send(req.session['currentUser']);
+        if (req.session.currentUser == null) {
+            console.log("Null");
+            res.json({LOGIN: true});
+        } else {
+            res.send(req.session['currentUser']);
+        }
     }
 
     function createRunner(req, res) {
