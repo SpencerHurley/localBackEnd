@@ -60,9 +60,9 @@ module.exports = function (app) {
 
     function updateRunner(req, res) {
         var runner = req.body;
+        req.session['currentUser'] = runner;
         runnerModel.updateRunner(runner)
             .then((runner) => {
-                req.session['currentUser'] = runner;
                 res.json(runner)
             });
     }

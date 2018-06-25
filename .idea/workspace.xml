@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20ca1251-fecd-4f8f-9f9e-ef49c5c0d5cf" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/models/segment/segmentSchema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/team/team.model.server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/teamEnrollment/enrollment.model.server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/teamEnrollment/enrollmentSchema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/segment.service.server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/team.service.server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/coach/coach.model.server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/coach/coachSchema.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/run/run.model.server.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/run/run.model.server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/run/runSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/run/runSchema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/runner/runner.model.server.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/runner/runner.model.server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/team/teamSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/team/teamSchema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/coach.service.server.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/segment/segment.model.server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/runner/runnerSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/runner/runnerSchema.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/runner.service.server.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/runner.service.server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -40,6 +27,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="runnerSchema.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/runner/runnerSchema.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="segment.service.server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/segment.service.server.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -52,8 +48,8 @@
       <file leaf-file-name="runner.model.server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/runner/runner.model.server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="345">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -85,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="runner.service.server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="runner.service.server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/runner.service.server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1395">
-              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="356">
+              <caret line="65" column="32" lean-forward="true" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -117,7 +113,6 @@
         <option value="$PROJECT_DIR$/models/runnerSchema.js" />
         <option value="$PROJECT_DIR$/models/coach/coachSchema.js" />
         <option value="$PROJECT_DIR$/models/coach/coach.model.server.js" />
-        <option value="$PROJECT_DIR$/models/runner/runnerSchema.js" />
         <option value="$PROJECT_DIR$/services/run.service.server.js" />
         <option value="$PROJECT_DIR$/models/team/teamSchema.js" />
         <option value="$PROJECT_DIR$/models/teamEnrollment/enrollmentSchema.js" />
@@ -132,6 +127,7 @@
         <option value="$PROJECT_DIR$/models/segment/segment.model.server.js" />
         <option value="$PROJECT_DIR$/models/runner/runner.model.server.js" />
         <option value="$PROJECT_DIR$/services/runner.service.server.js" />
+        <option value="$PROJECT_DIR$/models/runner/runnerSchema.js" />
       </list>
     </option>
   </component>
@@ -174,6 +170,12 @@
               <item name="node-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="node-server" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="node-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node-server" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="runner" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="node-server" type="b2602c69:ProjectViewProjectNode" />
@@ -224,22 +226,22 @@
       <updated>1529108252135</updated>
       <workItem from="1529108253294" duration="1454000" />
       <workItem from="1529701009140" duration="5395000" />
-      <workItem from="1529728301362" duration="34130000" />
+      <workItem from="1529728301362" duration="35521000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40979000" />
+    <option name="totallyTimeSpent" value="42370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28537735" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28537735" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -406,13 +408,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/runner/runnerSchema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="23" lean-forward="true" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/teamEnrollment/enrollment.model.server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -448,13 +443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/runner/runner.model.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/segment.service.server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -462,10 +450,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/runner/runner.model.server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/services/runner.service.server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+        <state relative-caret-position="356">
+          <caret line="65" column="32" lean-forward="true" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/runner/runnerSchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
