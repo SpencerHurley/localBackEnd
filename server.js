@@ -23,10 +23,11 @@ app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Credentials", "true");
     next();
 });
+app.get('/', (req,res ) => res.json("Hello World!"));
 
 require('./services/runner.service.server')(app);
 require('./services/run.service.server')(app);
 require('./services/team.service.server')(app);
 require('./services/segment.service.server')(app);
 
-app.listen(process.env.PORT || 4000);
+app.listen(4000);
